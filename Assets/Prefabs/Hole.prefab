@@ -7690,7 +7690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e167d5869ed704981c746a2e6c33ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lerpSpeed: 5
+  _moveSpeed: 5
+  _scaleSpeed: 5
+  _maxRange: 35
   ScoreUpdated:
     m_PersistentCalls:
       m_Calls:
