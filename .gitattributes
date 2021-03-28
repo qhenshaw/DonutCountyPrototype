@@ -50,9 +50,10 @@ Assets/**/*[Tt]errain*.asset -unityyaml lfs
 Assets/**/*[Nn]av[Mm]esh*.asset -unityyaml lfs
 Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 
-# special case tracking for PNG and ICO to accomodate GitHub pages + LFS
+# special case tracking for WebGL builds + GitHub pages + LFS
 Assets/**/*.png lfs
 Assets/**/*.ico lfs
+Assets/**/*.gz lfs
 
 # Image
 *.psd lfs
@@ -128,7 +129,6 @@ Assets/**/*.ico lfs
 # Packaging
 *.zip lfs
 *.7z lfs
-*.gz lfs
 *.rar lfs
 *.tar lfs
 *.tgz lfs
