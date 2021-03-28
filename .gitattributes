@@ -50,11 +50,6 @@ Assets/**/*[Tt]errain*.asset -unityyaml lfs
 Assets/**/*[Nn]av[Mm]esh*.asset -unityyaml lfs
 Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 
-# special case tracking for WebGL builds + GitHub pages + LFS
-Assets/**/*.png lfs
-Assets/**/*.ico lfs
-Assets/**/*.gz lfs
-
 # Image
 *.psd lfs
 *.jpg lfs
@@ -73,6 +68,8 @@ Assets/**/*.gz lfs
 *.spp lfs
 *.zpr lfs
 *.ZPR lfs
+*.png lfs
+*.ico lfs
 
 # Audio
 *.mp3 lfs
@@ -132,6 +129,7 @@ Assets/**/*.gz lfs
 *.rar lfs
 *.tar lfs
 *.tgz lfs
+*.gz lfs
 
 # Other
 *.ttf lfs
@@ -151,3 +149,9 @@ AKSoundEngine lfs
 
 # FMOD files
 *.bank lfs
+
+# special case tracking for WebGL builds + GitHub pages + LFS
+docs/**/*.png -lfs
+docs/**/*.ico -lfs
+docs/**/*.data -lfs
+docs/**/*.wasm -lfs
