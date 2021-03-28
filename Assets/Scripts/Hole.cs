@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Hole : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Hole : MonoBehaviour
 
     private Vector3 _position;
     private float _totalScore;
+
+    public UnityEvent<float> ScoreUpdated;
 
     private void Update()
     {
@@ -28,6 +31,8 @@ public class Hole : MonoBehaviour
         {
             _totalScore += growthScore.Score;
             transform.localScale += Vector3.one * growthScore.Score;
+
+            ScoreUpdated.Invoke(_totalScore);
         }
         
         Destroy(consumed);
